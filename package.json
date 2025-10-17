@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/booksy/",
+    "build": "vite build --base=/js_120_ods-fsd/",
     "preview": "vite preview"
   },
   "devDependencies": {

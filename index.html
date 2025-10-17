@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_120_ods-fsd/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booksy</title>
+    <script type="module" crossorigin src="/js_120_ods-fsd/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_120_ods-fsd/assets/vendor-BHxofFQz.js">
+    <link rel="stylesheet" crossorigin href="/js_120_ods-fsd/assets/vendor-kr3g72Yb.css">
+    <link rel="stylesheet" crossorigin href="/js_120_ods-fsd/assets/index-CGfsrAP6.css">
+  </head>
+
+  <body>
+    <header class="header" id="header">
+  <div class="header-container container">
+    <a href="./index.html" class="header-logo">
+      <svg class="logo-icon" width="84" height="36">
+        <use href="./img/sprite.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-list-item">
+          <a href="#header" class="header-nav-list-link">Home</a>
+        </li>
+        <li class="header-nav-list-item">
+          <a href="#books" class="header-nav-list-link">Books</a>
+        </li>
+        <li class="header-nav-list-item">
+          <a href="#feedbacks" class="header-nav-list-link">Feedbacks</a>
+        </li>
+        <li class="header-nav-list-item">
+          <a href="#events" class="header-nav-list-link">Events</a>
+        </li>
+        <li class="header-nav-list-item">
+          <a href="#location" class="header-nav-list-link">Location</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="burger">
+      <button type="button" class="burger-icon" data-burger-btn aria-label="Відкрити меню">
+        <svg class="burger-icon-svg" width="24" height="24">
+          <use href="./img/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="header-modal header-modal-container">
+    <div class="header-modal-container">
+      <div class="header-modal-nav">
+        <a href="./index.html" class="header-modal-nav-logo">
+          <svg class="logo-icon" width="84" height="36">
+            <use href="./img/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <button type="button" class="header-modal-nav-close" aria-label="Закрити меню">
+          <svg class="x-logo-icon" width="12" height="12">
+            <use href="./img/sprite.svg#icon-x"></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="header-modal-list">
+        <li class="header-modal-list-item">
+          <a href="#header" class="header-modal-list-link">Home</a>
+        </li>
+        <li class="header-modal-list-item">
+          <a href="#books" class="header-modal-list-link">Books</a>
+        </li>
+        <li class="header-modal-list-item">
+          <a href="#feedbacks" class="header-modal-list-link">Feedbacks</a>
+        </li>
+        <li class="header-modal-list-item">
+          <a href="#events" class="header-modal-list-link">Events</a>
+        </li>
+        <li class="header-modal-list-item">
+          <a href="#location" class="header-modal-list-link">Location</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+    <main>
+      <section class="hero" id="hero">
+  <div class="container hero-container">
+    <div class="hero-title-box">
+      <h1 class="hero-title">Discover Your Next Great Read Today!</h1>
+      <div class="hero-slider-controls">
+        <button
+          class="arrow hero-swiper-btn-prev"
+          aria-label="Попередній слайд"
+          disabled
+        >
+          <svg class="arrow-icon" width="14" height="14">
+            <use href="/js_120_ods-fsd/img/sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button class="arrow hero-swiper-btn-next" aria-label="Наступний слайд">
+          <svg class="arrow-icon" width="14" height="14">
+            <use href="/js_120_ods-fsd/img/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="swiper swiper-hero">
+      <ul class="swiper-wrapper swiper-wrapper-hero">
+        <li
+          class="swiper-slide swiper-slide-hero"
+          data-swiper-parallax="-100"
+          data-overlay="0"
+        >
+          <div class="hero-slide-content">
+            <h2 class="hero-slide-title">
+              Get 10% off your <br />
+              first order
+            </h2>
+            <a
+              href="#books"
+              class="btn slide-btn"
+              role="button"
+              aria-label="Go to Books section"
+              >Shop now!</a
+            >
+          </div>
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/js_120_ods-fsd/img/hero/desctop-banner-1-min.jpg 1x, /js_120_ods-fsd/img/hero/desctop-banner-1@2x-min.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/js_120_ods-fsd/img/hero/tablet-banner-1-min.jpg 1x, /js_120_ods-fsd/img/hero/tablet-banner-1@2x-min.jpg 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/js_120_ods-fsd/img/hero/mobile-banner-1-2-min.jpg 1x, /js_120_ods-fsd/img/hero/mobile-banner-1@2x-2-min.jpg 2x"
+            />
+            <img
+              src="/js_120_ods-fsd/img/hero/desctop-banner-1-min.jpg"
+              alt="Get 10% off your first order"
+              class="hero-slide-img"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
+        </li>
+        <li
+          class="swiper-slide swiper-slide-hero"
+          data-swiper-parallax="-100"
+          data-overlay="0.4"
+        >
+          <div class="hero-slide-content">
+            <h2 class="hero-slide-title">
+              Save 15% on <br />
+              some books
+            </h2>
+            <a
+              href="#books"
+              class="btn slide-btn"
+              role="button"
+              aria-label="Go to Books section"
+              >Shop now!</a
+            >
+          </div>
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/js_120_ods-fsd/img/hero/desctop-baner-2-min.jpg 1x, /js_120_ods-fsd/img/hero/desctop-baner-2@2x-min.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/js_120_ods-fsd/img/hero/tablet-banner-2-min.jpg 1x, /js_120_ods-fsd/img/hero/tablet-banner-2@2x-min.jpg 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/js_120_ods-fsd/img/hero/mobile-banner-1-3-min.jpg 1x, /js_120_ods-fsd/img/hero/mobile-banner-1@2x-3-min.jpg 2x"
+            />
+            <img
+              src="/js_120_ods-fsd/img/hero/desctop-baner-2-min.jpg"
+              alt="Save 15% on some books"
+              class="hero-slide-img"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li
+          class="swiper-slide swiper-slide-hero"
+          data-swiper-parallax="-100"
+          data-overlay="0.2"
+        >
+          <div class="hero-slide-content">
+            <h2 class="hero-slide-title">
+              Summer Sale! <br />
+              Up to -40% discounts
+            </h2>
+            <a
+              href="#books"
+              class="btn slide-btn"
+              role="button"
+              aria-label="Go to Books section"
+              >Shop now!</a
+            >
+          </div>
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/js_120_ods-fsd/img/hero/desctop-baner-3-min.jpg 1x, /js_120_ods-fsd/img/hero/desctop-baner-3@2x-min.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/js_120_ods-fsd/img/hero/tablet-banner-3-min.jpg 1x, /js_120_ods-fsd/img/hero/tablet-banner-3@2x-min.jpg 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/js_120_ods-fsd/img/hero/mobile-banner-1-min.jpg 1x, /js_120_ods-fsd/img/hero/mobile-banner-1@2x-min.jpg 2x"
+            />
+            <img
+              src="/js_120_ods-fsd/img/hero/desctop-baner-3-min.jpg"
+              alt="Summer Sale! Up to -40% discounts"
+              class="hero-slide-img"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li
+          class="swiper-slide swiper-slide-hero"
+          data-swiper-parallax="-100"
+          data-overlay="0.3"
+        >
+          <div class="hero-slide-content">
+            <h2 class="hero-slide-title">
+              Last chance to buy our <br />
+              spring bestsellers
+            </h2>
+            <a
+              href="#books"
+              class="btn slide-btn"
+              role="button"
+              aria-label="Go to Books section"
+              >Shop now!</a
+            >
+          </div>
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/js_120_ods-fsd/img/hero/desctop-baner-4-min.jpg 1x, /js_120_ods-fsd/img/hero/desctop-baner-4@2x-min.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/js_120_ods-fsd/img/hero/tablet-banner-4-min.jpg 1x, /js_120_ods-fsd/img/hero/tablet-banner-4@2x-min.jpg 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/js_120_ods-fsd/img/hero/mobile-banner-1-1-min.jpg 1x, /js_120_ods-fsd/img/hero/mobile-banner-1@2x-1-min.jpg 2x"
+            />
+            <img
+              src="/js_120_ods-fsd/img/hero/desctop-baner-4-min.jpg"
+              alt="Last chance to buy our spring bestsellers"
+              class="hero-slide-img"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section-books" id="books">
+  <div class="container div-book">
+    <h2 class="visually-hidden">Trending books</h2>
+    <form class="books-form">
+      <div class="categories-wrapper">
+        <!-- Верхній ряд: Books + Showing + Categories в одну лінію -->
+        <div class="books-counter">
+          <h3 class="subtitle">Books</h3>
+          <div class="counter-group">
+            <p class="counter-books">
+              Showing <span class="visible-books"></span> of
+              <span class="total-books"></span>
+            </p>
+            <!-- Селект тепер всередині books-counter -->
+            <div class="select-wrapper">
+              <button
+                type="button"
+                class="category-select-btn"
+                id="category-select-btn"
+              >
+                <span class="category-select-text">Categories</span>
+                <svg
+                  class="categories-arrow"
+                  width="12"
+                  height="12"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use href="./img/sprite.svg#icon-arrow-down" />
+                </svg>
+              </button>
+              <ul class="category-dropdown hidden" id="category-dropdown"></ul>
+
+              <!-- Прихований select для accessibility -->
+              <select
+                id="category-select"
+                class="visually-hidden"
+                aria-hidden="true"
+                tabindex="-1"
+              ></select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop список категорій -->
+        <fieldset class="categories-group">
+          <legend class="visually-hidden">Choose book category</legend>
+          <ul class="categories-list"></ul>
+        </fieldset>
+      </div>
+    </form>
+    <div class="books-wrapper">
+      <div
+        id="loader"
+        class="loader hidden"
+        role="status"
+        aria-live="polite"
+        aria-label="Loading books"
+      ></div>
+      <ul class="gallery" aria-live="polite" aria-label="Book list"></ul>
+      <button
+        type="button"
+        class="btn btn-show-more btn-show-more-hidden"
+        aria-label="Show more books"
+      >
+        Show more
+      </button>
+    </div>
+  </div>
+</section>
+
+      <section
+  id="feedbacks"
+  class="feedbacks-section"
+  aria-labelledby="feedbacks-title"
+>
+  <div class="container">
+    <h2 class="feedbacks-title" id="feedbacks-title">Customer Feedbacks</h2>
+    <p class="feedbacks-eyebrow">See what our readers are saying about us!</p>
+
+    <!-- СЛАЙДЕР -->
+    <div
+      class="swiper feedbacks-swiper"
+      tabindex="0"
+      aria-describedby="feedbacks-title"
+    >
+      <ul class="swiper-wrapper feedbacks-list">
+        <li class="swiper-slide feedbacks-item">
+          <p class="feedbacks-text">
+            Great selection, fast delivery, and beautifully packaged books. My
+            go-to store for weekend reads!
+          </p>
+          <div class="feedbacks-author">
+            <img
+              class="feedbacks-avatar"
+              src="/js_120_ods-fsd/img/feedbacks/JaneDoe.svg"
+              width="40"
+              height="40"
+              alt="Jane Doe"
+              loading="lazy"
+            />
+            <div>
+              <p class="feedbacks-name">Jane Doe</p>
+              <p class="feedbacks-role">Book Lover, Reader</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="swiper-slide feedbacks-item">
+          <p class="feedbacks-text">
+            Customer service was super helpful, and my order arrived earlier
+            than expected. Highly recommend!
+          </p>
+          <div class="feedbacks-author">
+            <img
+              class="feedbacks-avatar"
+              src="/js_120_ods-fsd/img/feedbacks/JohnSmith.svg"
+              width="40"
+              height="40"
+              alt="John Smith"
+              loading="lazy"
+            />
+            <div>
+              <p class="feedbacks-name">John Smith</p>
+              <p class="feedbacks-role">Editor, BookMag</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="swiper-slide feedbacks-item">
+          <p class="feedbacks-text">
+            Love the curated picks and clear descriptions. Makes it easy to find
+            my next favorite book.
+          </p>
+          <div class="feedbacks-author">
+            <img
+              class="feedbacks-avatar"
+              src="/js_120_ods-fsd/img/feedbacks/EmilyJohnson.svg"
+              width="40"
+              height="40"
+              alt="Emily Johnson"
+              loading="lazy"
+            />
+            <div>
+              <p class="feedbacks-name">Emily Johnson</p>
+              <p class="feedbacks-role">Author, Novelist</p>
+            </div>
+          </div>
+        </li>
+
+        <!-- extra slides for testing -->
+        <li class="swiper-slide feedbacks-item">
+          <p class="feedbacks-text">
+            Fast support and smooth checkout. Found exactly what I needed in
+            minutes.
+          </p>
+          <div class="feedbacks-author">
+            <img
+              class="feedbacks-avatar"
+              src="/js_120_ods-fsd/img/feedbacks/JohnSmith.svg"
+              width="40"
+              height="40"
+              alt="David Lee"
+              loading="lazy"
+            />
+            <div>
+              <p class="feedbacks-name">David Lee</p>
+              <p class="feedbacks-role">Teacher, Reader</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="swiper-slide feedbacks-item">
+          <p class="feedbacks-text">
+            Great curation! Descriptions are clear, it’s easy to pick the next
+            read.
+          </p>
+          <div class="feedbacks-author">
+            <img
+              class="feedbacks-avatar"
+              src="/js_120_ods-fsd/img/feedbacks/JaneDoe.svg"
+              width="40"
+              height="40"
+              alt="Sophia Martinez"
+              loading="lazy"
+            />
+            <div>
+              <p class="feedbacks-name">Sophia Martinez</p>
+              <p class="feedbacks-role">UX Researcher</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="swiper-slide feedbacks-item">
+          <p class="feedbacks-text">
+            Delivery arrived earlier than expected and the books were
+            well-packed.
+          </p>
+          <div class="feedbacks-author">
+            <img
+              class="feedbacks-avatar"
+              src="/js_120_ods-fsd/img/feedbacks/EmilyJohnson.svg"
+              width="40"
+              height="40"
+              alt="Michael Brown"
+              loading="lazy"
+            />
+            <div>
+              <p class="feedbacks-name">Michael Brown</p>
+              <p class="feedbacks-role">Blogger, Book Club</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="swiper-slide feedbacks-item">
+          <p class="feedbacks-text">
+            Love the weekend deals and the recommendations. Already built a
+            wish-list!
+          </p>
+          <div class="feedbacks-author">
+            <img
+              class="feedbacks-avatar"
+              src="/js_120_ods-fsd/img/feedbacks/JaneDoe.svg"
+              width="40"
+              height="40"
+              alt="Olivia Wilson"
+              loading="lazy"
+            />
+            <div>
+              <p class="feedbacks-name">Olivia Wilson</p>
+              <p class="feedbacks-role">Student</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="swiper-slide feedbacks-item">
+          <p class="feedbacks-text">
+            Nice UI and quick filters. The search works great for specific
+            genres.
+          </p>
+          <div class="feedbacks-author">
+            <img
+              class="feedbacks-avatar"
+              src="/js_120_ods-fsd/img/feedbacks/JohnSmith.svg"
+              width="40"
+              height="40"
+              alt="Liam Nguyen"
+              loading="lazy"
+            />
+            <div>
+              <p class="feedbacks-name">Liam Nguyen</p>
+              <p class="feedbacks-role">Engineer</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="swiper-slide feedbacks-item">
+          <p class="feedbacks-text">
+            Gift wrapping was perfect. Will definitely order presents here
+            again.
+          </p>
+          <div class="feedbacks-author">
+            <img
+              class="feedbacks-avatar"
+              src="/js_120_ods-fsd/img/feedbacks/EmilyJohnson.svg"
+              width="40"
+              height="40"
+              alt="Ava Thompson"
+              loading="lazy"
+            />
+            <div>
+              <p class="feedbacks-name">Ava Thompson</p>
+              <p class="feedbacks-role">Book Lover</p>
+            </div>
+          </div>
+        </li>
+        <!-- /extra slides -->
+      </ul>
+    </div>
+
+    <!-- КОНТРОЛИ ПІД СЛАЙДЕРОМ (поза .swiper) -->
+    <div class="feedbacks-controls">
+      <div
+        class="swiper-pagination feedbacks-pagination"
+        aria-label="Slides"
+      ></div>
+
+      <div class="feedbacks-nav" aria-label="Slider navigation">
+        <button
+          class="feedbacks-nav__btn feedbacks-nav__btn--prev"
+          type="button"
+          aria-label="Previous slide"
+        >
+          <svg width="18" height="18" aria-hidden="true">
+            <use href="/js_120_ods-fsd/img/sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button
+          class="feedbacks-nav__btn feedbacks-nav__btn--next"
+          type="button"
+          aria-label="Next slide"
+        >
+          <svg width="18" height="18" aria-hidden="true">
+            <use href="/js_120_ods-fsd/img/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="events-section" id="events">
+  <div class="container ev-container">
+    <p class="ev-ev">Events</p>
+    <h2 class="ev-title">Upcoming Events at Booksy</h2>
+    <p class="ev-text">
+      Discover readings, workshops, and bookish gatherings — online and offline.
+      Everyone's welcome.
+    </p>
+
+    <div class="ev-swiper">
+      <ul class="ev-list">
+        <li class="ev-item">
+          <picture class="ev-photo">
+            <source
+              media="(min-width: 1440px)"
+              srcset="/js_120_ods-fsd/img/events/midnight-desk-1x.jpg 1x, /js_120_ods-fsd/img/events/midnight-desk-2x.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/js_120_ods-fsd/img/events/midnight-tabl-1x.jpg 1x, /js_120_ods-fsd/img/events/midnight-tabl-2x.jpg 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/js_120_ods-fsd/img/events/midnight-mob-1x.jpg 1x, /js_120_ods-fsd/img/events/midnight-mob-2x.jpg 2x"
+            />
+            <img
+              src="/js_120_ods-fsd/img/events/midnight-mob-1x.jpg"
+              width="342"
+              height="277"
+              alt="Four people sitting on a couch reading books in a cozy library setting."
+            />
+          </picture>
+
+          <div class="ev-descr">
+            <div>
+              <h3 class="ev-descr-title">
+                Cozy Book Club — "The Midnight Library"
+              </h3>
+              <p class="ev-descr-meta">In-store | June 5, 6:30 PM</p>
+              <p class="ev-descr-text">
+                Join us for an evening of tea, thoughtful conversation, and
+                shared reflections as we dive into Matt Haig`s bestseller.
+              </p>
+            </div>
+            <button
+              class="ev-btn js-register"
+              type="button"
+              data-id="midnight"
+              data-title="Cozy Book Club — The Midnight Library"
+              data-date="June 5, 6:30 PM"
+              data-format="In-store"
+            >
+              Register
+              <svg width="8" height="12">
+                <use class="ev-icon" href="/js_120_ods-fsd/img/sprite.svg#icon-right"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+
+        <li class="ev-item">
+          <picture class="ev-photo">
+            <source
+              media="(min-width: 1440px)"
+              srcset="/js_120_ods-fsd/img/events/design-desk-1x.jpg 1x, /js_120_ods-fsd/img/events/design-desk-2x.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/js_120_ods-fsd/img/events/design-tabl-1x.jpg 1x, /js_120_ods-fsd/img/events/design-tabl-2x.jpg 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/js_120_ods-fsd/img/events/design-mob-1x.jpg 1x, /js_120_ods-fsd/img/events/design-mob-2x.jpg 2x"
+            />
+            <img
+              src="/js_120_ods-fsd/img/events/design-mob-1x.jpg"
+              width="342"
+              height="277"
+              alt="A group of colleagues collaborating on a design project at a table."
+            />
+          </picture>
+
+          <div class="ev-descr">
+            <div>
+              <h3 class="ev-descr-title">Book Cover Design Workshop</h3>
+              <p class="ev-descr-meta">Online | June 12, 7:00 PM</p>
+              <p class="ev-descr-text">
+                A hands-on session for aspiring designers and curious readers.
+                Learn what makes a cover stand out — from concept to print.
+              </p>
+            </div>
+            <button
+              class="ev-btn js-register"
+              type="button"
+              data-id="design"
+              data-title="The Art of Book Design"
+              data-date="July 12, 4:00 PM"
+              data-format="Online"
+            >
+              Register
+              <svg width="8" height="12">
+                <use class="ev-icon" href="/js_120_ods-fsd/img/sprite.svg#icon-right"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+
+        <li class="ev-item">
+          <picture class="ev-photo">
+            <source
+              media="(min-width: 1440px)"
+              srcset="/js_120_ods-fsd/img/events/childrens-desk-1x.jpg 1x, /js_120_ods-fsd/img/events/childrens-desk-2x.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/js_120_ods-fsd/img/events/childrens-tabl-1x.jpg 1x, /js_120_ods-fsd/img/events/childrens-tabl-2x.jpg 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/js_120_ods-fsd/img/events/childrens-mob-1x.jpg 1x, /js_120_ods-fsd/img/events/childrens-mob-2x.jpg 2x"
+            />
+            <img
+              src="/js_120_ods-fsd/img/events/childrens-mob-1x.jpg"
+              width="342"
+              height="277"
+              alt="A woman reading a story to a group of children in a library."
+            />
+          </picture>
+
+          <div class="ev-descr">
+            <div>
+              <h3 class="ev-descr-title">Children's Story Hour</h3>
+              <p class="ev-descr-meta">In-store | June 15, 11:00 AM</p>
+              <p class="ev-descr-text">
+                A magical morning of stories, games, and imagination for our
+                youngest book lovers (ages 4-8).
+              </p>
+            </div>
+            <button
+              class="ev-btn js-register"
+              type="button"
+              data-id="children"
+              data-title="Children's Reading Hour"
+              data-date="August 20, 11:00 AM"
+              data-format="In-store"
+            >
+              Register
+              <svg width="8" height="12">
+                <use class="ev-icon" href="/js_120_ods-fsd/img/sprite.svg#icon-right"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+      </ul>
+
+      <div class="ev-slide-wrap">
+        <ul class="ev-pagination" aria-label="Slides pagination"></ul>
+
+        <div class="ev-nav" aria-label="Slider navigation">
+          <button
+            class="ev-swipe-btn-prev"
+            type="button"
+            aria-label="Previous slide"
+          >
+            <svg width="14" height="14" aria-hidden="true">
+              <use
+                class="ev-icon-ar"
+                href="/js_120_ods-fsd/img/sprite.svg#icon-arrow-left"
+              ></use>
+            </svg>
+          </button>
+          <button
+            class="ev-swipe-btn-next"
+            type="button"
+            aria-label="Next slide"
+          >
+            <svg width="14" height="14" aria-hidden="true">
+              <use
+                class="ev-icon-ar"
+                href="/js_120_ods-fsd/img/sprite.svg#icon-arrow-right"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <div
+  class="modal modal-contacts"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modalTitle"
+  aria-describedby="modalDesc"
+>
+  <div class="container">
+    <div class="modal-content">
+      <button class="modal_close-btn" aria-label="Close contacts form modal">
+        <svg>
+          <use class="mc" xlink:href="img/sprite.svg#icon-x"></use>
+        </svg>
+      </button>
+
+      <h2 class="modal-contacts_title" id="modalTitle">Register</h2>
+      <p class="modal-contacts_text" id="modalDesc">
+        Cozy Book Club — “The Midnight Library”
+      </p>
+      <form class="modal-contacts_form" id="contactForm" novalidate>
+        <label class="contact-form-name">
+          Name* <span class="validation-error"></span>
+          <input
+            class="form-control"
+            type="text"
+            id="user_name"
+            name="user_name"
+            required
+            placeholder="Ann"
+            autocomplete="name"
+            data-validate="required"
+        /></label>
+        <label class="contact-form-email"
+          >Email* <span class="validation-error"></span>
+          <input
+            class="form-control"
+            type="email"
+            name="user_email"
+            id="user_email"
+            required
+            placeholder="hello@booksy.com"
+            autocomplete="email"
+            data-validate="email"
+        /></label>
+        <label class="contact-form-message"
+          >Message <span class="validation-error"></span>
+          <textarea
+            class="form-control"
+            name="user_message"
+            id="user_message"
+            placeholder="Type your message..."
+            rows="4"
+          ></textarea>
+        </label>
+
+        <button
+          class="btn register-btn"
+          type="submit"
+          id="submitBtn"
+          name="register"
+          aria-label="Register"
+        >
+          Register
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+      <div class="modal modal-books" role="dialog" aria-modal="true" aria-labelledby="bookModalTitle">
+  <div class="container">
+    <div class="modal-content">
+      <button class="modal_close-btn" aria-label="Close book details modal">
+        <svg>
+          <use xlink:href="/js_120_ods-fsd/img/sprite.svg#icon-x"></use>
+        </svg>
+      </button>
+      <picture class="modal-books_picture" id="bookPicture">
+        <img class="modal-books_img" src="#" alt="not empty need" />
+      </picture>
+      <div class="modal-books_data" data-book-id="" data-book-price="" data-book-title="">
+        <p class="modal-books_title" id="bookModalTitle"></p>
+        <p class="modal-books_author"></p>
+        <p class="modal-books_price"></p>
+
+        <form class="book-action-form" id="bookModalActionForm">
+          <div class="modal-books_quantity-container" data-min-quantity="1" data-max-quantity="999" data-step="1">
+            <button class="btn btn-secondary" type="button" data-action="decrease">
+              -
+            </button>
+            <label for="bookQuantity" class="visually-hidden">Book quantity</label>
+
+            <input class="quantity-input no-arrows" id="bookQuantity" value="" min="1" type="number" />
+            <button class="btn btn-secondary" type="button" data-action="increase">
+              +
+            </button>
+          </div>
+          <div class="modal-books_message-container"></div>
+          <div class="modal-books_buttons-container">
+            <button class="btn" type="button" data-action="add-to-cart">
+              Add To Cart
+            </button>
+            <button type="submit" class="btn btn-secondary" data-action="buy-now">
+              Buy Now
+            </button>
+          </div>
+        </form>
+
+        <div class="accordion-container">
+          <div class="ac">
+            <h2 class="ac-header">
+              <button type="button" class="ac-trigger">
+                Details
+                <svg class="chevron-icon">
+                  <use xlink:href="/js_120_ods-fsd/img/sprite.svg#icon-up"></use>
+                </svg>
+              </button>
+            </h2>
+            <div class="ac-panel">
+              <p class="ac-text" data-ac="details"></p>
+            </div>
+          </div>
+
+          <div class="ac">
+            <h2 class="ac-header">
+              <button type="button" class="ac-trigger">
+                Shipping<svg class="chevron-icon">
+                  <use xlink:href="/js_120_ods-fsd/img/sprite.svg#icon-up"></use>
+                </svg>
+              </button>
+            </h2>
+            <div class="ac-panel">
+              <p class="ac-text" data-ac="shipping"></p>
+            </div>
+          </div>
+
+          <div class="ac">
+            <h2 class="ac-header">
+              <button type="button" class="ac-trigger">
+                Returns<svg class="chevron-icon">
+                  <use xlink:href="/js_120_ods-fsd/img/sprite.svg#icon-up"></use>
+                </svg>
+              </button>
+            </h2>
+            <div class="ac-panel">
+              <p class="ac-text" data-ac="returns"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <section class="article-section" id="article">
+    <div class="container article-container">
+        <div class="article-desc">
+            <h2 class="article-title">
+                Welcome to Booksy - your cozy corner for handpicked reads.
+            </h2>
+            <p class="article-text">
+                We believe books are more than just stories — they`re companions,
+                doorways, and memories. Whether you`re chasing adventures or quiet
+                moments, we`re here to help you find your next favorite book.
+            </p>
+        </div>
+        <picture class="article-picture">
+            <source media="(min-width:1440px )"
+                srcset="./img/article/desktop-container-min.jpg 1x, ./img/article/desktop-container@2x-min.jpg 2x">
+            <source media="(min-width: 768px)"
+                srcset="./img/article/tablet-container-min.jpg 1x, ./img/article/tablet-container@2x-min.jpg 2x">
+            <source media="(max-width:768px)"
+                srcset="./img/article/mobile-container-min.jpg, ./img/article/mobile-container@2x-min.jpg 2x">
+            <img class="article-photo" src="./img/article/desktop-container-min.jpg"
+                alt="Cozy reading nook in a sunlit library with shelves of books" loading="lazy" width="343"
+                height="248">
+        </picture>
+    </div>
+</section>
+      <section class="location-section" id="location">
+  <div class="container location-container">
+    <div class="location-content-wrapper">
+      <div class="location-text-content">
+        <p class="location-tagline">Location</p>
+        <h2 class="location-title">How to find us</h2>
+        <p class="location-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique.
+        </p>
+      </div>
+      <ul class="location-contacts-list">
+        <li class="location-contacts-item">
+          <div class="location-icon-wrapper">
+            <svg class="location-icon" width="24" height="24">
+              <use href="/js_120_ods-fsd/assets/sprite-CIwJLidB.svg#icon-mail"></use>
+            </svg>
+          </div>
+          <div class="location-contact-info">
+            <h3 class="location-contact-title">Email</h3>
+            <a href="mailto:hello@booksy.com" class="location-contact-link"
+              >hello@booksy.com</a
+            >
+          </div>
+        </li>
+        <li class="location-contacts-item">
+          <div class="location-icon-wrapper">
+            <svg class="location-icon" width="24" height="24">
+              <use href="/js_120_ods-fsd/assets/sprite-CIwJLidB.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <div class="location-contact-info">
+            <h3 class="location-contact-title">Phone</h3>
+            <a href="tel:+612413043012" class="location-contact-link"
+              >+61 (241) 304-3012</a
+            >
+          </div>
+        </li>
+        <li class="location-contacts-item">
+          <div class="location-icon-wrapper">
+            <svg class="location-icon" width="24" height="24">
+              <use href="/js_120_ods-fsd/assets/sprite-CIwJLidB.svg#icon-locate"></use>
+            </svg>
+          </div>
+          <div class="location-contact-info">
+            <h3 class="location-contact-title">Office</h3>
+            <p class="location-contact-text">
+              123 Books St, Sydney NSW 2000 AU
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="location-map-wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.193297129598!2d151.2040283763321!3d-33.88458997322044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae22cd06f3b9%3A0x8ed1a723a3f2545f!2s123%20Books%20St%2C%20Sydney%20NSW%202000%2C%20Australia!5e0!3m2!1sen!2sus!4v1696864848888!5m2!1sen!2sus"
+        class="location-map"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-container">
+      <nav class="footer-logo-nav">
+        <a href="./index.html" class="footer-logo-icon" aria-label="Back to homepage">
+          <svg class="footer-logo-icon" width="84" height="36" fill="black">
+            <use href="/js_120_ods-fsd/img/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <ul class="footer-nav-links-list">
+          <li><a href="#header" class="footer-nav-link">Home</a></li>
+          <li><a href="#books" class="footer-nav-link">Books</a></li>
+          <li><a href="#feedbacks" class="footer-nav-link">Feedbacks</a></li>
+          <li><a href="#location" class="footer-nav-link">Location</a></li>
+        </ul>
+      </nav>
+      <div class="footer-join">
+        <form class="form-footer">
+          <label for="join" class="footer-join-label">Join</label>
+          <div class="footer-email-form">
+            <input class="email-input" type="email" name="email-address" placeholder="Enter your email" id="join"
+              required pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" autocomplete="email" />
+            <button class="footer-join-btn" type="submit">Sign up</button>
+          </div>
+        </form>
+        <span class="footer-join-message">* Required field</span>
+      </div>
+    </div>
+    <div class="license-container">
+      <span class="license-text" aria-label="license-text">&#xA9; 2025 Booksy. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+    <button type="button" class="btn-up" aria-label="Go to top">
+      <svg class="btn-up-icon" width="24" height="24">
+        <use href="/js_120_ods-fsd/img/sprite.svg#icon-arrow-up"></use>
+      </svg>
+    </button>
+
+  </body>
+</html>
